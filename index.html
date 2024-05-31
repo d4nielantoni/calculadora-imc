@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <form id="imcForm">
+            <label for="gender">Gênero:</label>
+            <select id="gender" required>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+            </select>
+
+            <label for="height">Altura (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" required>
+
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <div class="explanation">
+        <h2>Como é realizado o cálculo do IMC?</h2>
+        <p>O IMC (Índice de Massa Corporal) é calculado utilizando a seguinte fórmula:</p>
+        <p><strong>IMC = peso / (altura * altura)</strong></p>
+        <p>Onde:</p>
+        <ul>
+            <li><strong>Peso:</strong> é o seu peso em quilogramas (kg).</li>
+            <li><strong>Altura:</strong> é a sua altura em metros (m).</li>
+        </ul>
+        <p>O resultado é classificado em diferentes categorias, como abaixo do peso, peso normal, sobrepeso e obesidade.</p>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
